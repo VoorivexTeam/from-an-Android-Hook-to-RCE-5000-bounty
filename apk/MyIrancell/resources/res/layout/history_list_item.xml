@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/standard_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/history_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textIsSelectable="false"/>
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/history_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:textIsSelectable="false"/>
+</LinearLayout>

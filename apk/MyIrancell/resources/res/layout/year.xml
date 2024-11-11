@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/viwe3"
+    android:visibility="gone"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/yearplus"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:src="@drawable/numberpicker_up_normal"/>
+    <EditText
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/year"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:minEms="5"
+        android:maxLength="4"
+        android:digits="1234567890"
+        android:inputType="number"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/yearminus"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:src="@drawable/numberpicker_down_normal"/>
+</LinearLayout>

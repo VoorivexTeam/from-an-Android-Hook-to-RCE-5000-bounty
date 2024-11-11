@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/dl_min_width">
+    <TextView
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Your process was not completed. Please try again"/>
+    <LinearLayout
+        android:gravity="right"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/bt_ok"
+            android:background="@color/colorYellow"
+            android:padding="6dp"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:text="Return To App"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linear_parent"
+    android:background="@drawable/selector_item_bank"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/fab_margin">
+    <FrameLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/frame_layout"
+        android:layout_width="@dimen/gv_circle_width"
+        android:layout_height="@dimen/gv_circle_height"
+        android:layout_marginTop="@dimen/fab_margin"/>
+    <TextView
+        android:textSize="@dimen/tv_bank_name_size"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:id="@+id/bank_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mid_margin"
+        android:layout_below="@+id/frame_layout"/>
+</LinearLayout>

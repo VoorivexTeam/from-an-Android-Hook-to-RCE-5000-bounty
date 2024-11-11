@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:id="@+id/inputSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_en"
+        android:drawablePadding="5dp"
+        android:layout_alignParentTop="true"/>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/listprogress"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@android:style/Widget.ProgressBar.Inverse"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputSearch"/>
+</RelativeLayout>

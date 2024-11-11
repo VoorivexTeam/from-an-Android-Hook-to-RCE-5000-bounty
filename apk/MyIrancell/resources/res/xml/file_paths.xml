@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path
+        name="temp_dir"
+        path="temp"/>
+    <external-path
+        name="temp"
+        path="Pictures/temp"/>
+    <external-path
+        name="external_files"
+        path="."/>
+</paths>

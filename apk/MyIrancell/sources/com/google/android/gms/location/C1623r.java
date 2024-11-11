@@ -1,0 +1,45 @@
+package com.google.android.gms.location;
+
+import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.C1052a;
+import java.util.ArrayList;
+
+/* renamed from: com.google.android.gms.location.r */
+/* loaded from: classes.dex */
+public final class C1623r implements Parcelable.Creator<ActivityRecognitionResult> {
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ ActivityRecognitionResult createFromParcel(Parcel parcel) {
+        int m7222b = C1052a.m7222b(parcel);
+        long j = 0;
+        long j2 = 0;
+        ArrayList arrayList = null;
+        Bundle bundle = null;
+        int i = 0;
+        while (parcel.dataPosition() < m7222b) {
+            int m7216a = C1052a.m7216a(parcel);
+            int m7215a = C1052a.m7215a(m7216a);
+            if (m7215a == 1) {
+                arrayList = C1052a.m7226c(parcel, m7216a, DetectedActivity.CREATOR);
+            } else if (m7215a == 2) {
+                j = C1052a.m7210C(parcel, m7216a);
+            } else if (m7215a == 3) {
+                j2 = C1052a.m7210C(parcel, m7216a);
+            } else if (m7215a == 4) {
+                i = C1052a.m7208A(parcel, m7216a);
+            } else if (m7215a != 5) {
+                C1052a.m7214G(parcel, m7216a);
+            } else {
+                bundle = C1052a.m7229f(parcel, m7216a);
+            }
+        }
+        C1052a.m7241r(parcel, m7222b);
+        return new ActivityRecognitionResult(arrayList, j, j2, i, bundle);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ ActivityRecognitionResult[] newArray(int i) {
+        return new ActivityRecognitionResult[i];
+    }
+}
